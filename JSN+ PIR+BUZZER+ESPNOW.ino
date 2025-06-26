@@ -1,14 +1,11 @@
 #include <esp_now.h>
 #include <WiFi.h>
-
 // === Pin Definitions ===
 #define TRIG_PIN     18  // JSN TRIG
 #define ECHO_PIN     5   // JSN ECHO
 #define PIR_PIN      22  // PIR sensor
 #define BUZZER_PIN   26  // Buzzer
-
 #define SOUND_SPEED  0.0343  // cm/us
-
 // === ESP-NOW Struct ===
 typedef struct struct_message {
     float distanceCm;  // Measured distance in cm
